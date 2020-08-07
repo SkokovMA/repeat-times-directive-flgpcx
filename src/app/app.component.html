@@ -1,0 +1,13 @@
+<p>
+	A simple calendar:
+</p>
+
+<div class="calendar">
+	<button *repeatTimes="let day of days" (click)="onDaySelect(day + 1)">
+    {{day + 1}}
+  </button>
+</div>
+
+<p>
+	Selected day: {{selectedDay}}
+</p>
